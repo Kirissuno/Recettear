@@ -1,0 +1,265 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg.png);
+
+}
+
+.container{
+  background-color: white;
+}
+
+/* CABECERA*/
+#titulo{
+  background-image: url(../img/titulobg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#titulo h1{
+	font-size: 100px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: hsla(120, 60%, 70%, 0.4);
+	background-image: url(../img/titulo.png);
+	-webkit-background-clip:text;
+	animation: titulo 15s infinite;
+}
+
+@keyframes titulo {
+	from{
+		background-position: left 0 top 0;
+	}
+	to{
+		background-position: left 1000px top 0;
+	}
+}
+
+/* NAVEGADOR */
+
+.menu{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.menu ul{
+  padding: 10px;
+  list-style-type: none;
+}
+
+.menu ul li{
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: inherit;
+}
+
+.menu ul li a{
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu ul li a:hover{
+  background-color: #444;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/*CONTACTANOS*/
+.contactanos{
+  position: fixed;
+  top: 40%;
+  z-index: 99999;
+  left: 0;
+}
+.opcion{
+  cursor: pointer;
+  position: relative;
+}
+
+.opcion a{
+  color: black;
+}
+
+.opcion a:hover{
+  text-decoration: none;
+}
+
+.opcion i{
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #f1f1f1;
+  font-size: 20px;
+  transition: 0.6s;
+}
+
+.opcion:hover i{
+  color: #3498db;
+}
+
+.texto{
+  position: absolute;
+  height: 60px;
+  width: 200px;
+  background: black;
+  color: white;
+  top: 0;
+  z-index: -1;
+  left: -140px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.6s;
+}
+
+.opcion:hover .texto{
+  left: 60px;
+}
+
+
+/* LATERAL */
+#lateral img{
+  width: 150px;
+  height: auto;
+}
+
+/* CUERPO */
+
+
+/* CUERPO DULCES*/
+.dulces p{
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  color: #4CAF50;
+}
+
+.dulces a:hover{
+  text-decoration: none;
+}
+
+.dulces img{
+  width: 300px;
+  height: auto;
+  margin: 10px;
+}
+
+/* CUERPO SALADOS */
+div.salados{
+  text-align: center;
+}
+
+.salados p{
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  color: #4CAF50;
+}
+
+.salados a:hover{
+  text-decoration: none;
+}
+
+.salados img{
+  width: 60%;
+  height: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* CUERPO SORTEO*/
+#c-cuerpo{
+  text-align: center;
+}
+
+.formulario{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.formulario h5{
+  text-align: center;
+}
+
+.sorteofile{
+  margin: 10px;
+}
+
+input.sortexto{
+  width: 100%;
+  border: 0;
+  background: black;
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+  outline: none;
+  color: white;
+  transition: 0.5s;
+}
+
+input.sortexto:focus{
+  box-shadow: 0 0 10px 4px #4CAF50;
+}
+
+input.sortbtn{
+  border: 0;
+  background: black;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input.sortbtn:hover{
+  background: #2980b9;
+}
+
+input.sortbtn::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* PIE */
+#pie{
+  background-color: black;
+  color: white;
+}
+
+/* ARRIBA!! */
+html{
+  scroll-behavior: smooth;
+}
+section{
+  width: 100%;
+  height: 300vh;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+}
+.arriba{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #4CAF50;
+  bottom: 20px;
+  right: 30px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+.arriba:hover{
+  color: black;
+}
