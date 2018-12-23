@@ -132,46 +132,34 @@ body{
 
 /* CUERPO */
 
+.thumbnail{
+  background-color: black;
+}
+
+.thumbnail p{
+  padding: 10px;
+}
+
+.caption{
+  color: white;
+}
 
 /* CUERPO DULCES*/
-.dulces p{
-  text-align: center;
-  font-size: 24px;
-  font-style: italic;
-  color: #4CAF50;
-}
 
-.dulces a:hover{
-  text-decoration: none;
-}
-
-.dulces img{
-  width: 300px;
-  height: auto;
-  margin: 10px;
+.dulces{
+  padding: 15px;
 }
 
 /* CUERPO SALADOS */
-div.salados{
-  text-align: center;
+
+.salados{
+  padding: 15px;
 }
 
-.salados p{
-  text-align: center;
-  font-size: 24px;
-  font-style: italic;
-  color: #4CAF50;
-}
+/* CUERPO BEBIDAS */
 
-.salados a:hover{
-  text-decoration: none;
-}
-
-.salados img{
-  width: 60%;
-  height: auto;
-  padding-left: 5px;
-  padding-right: 5px;
+.bebidas {
+  padding: 15px;
 }
 
 /* CUERPO SORTEO*/
@@ -233,6 +221,57 @@ input.sortbtn::after{
 #pie{
   background-color: black;
   color: white;
+}
+
+.btn{
+  width: 50px;
+  height: 40px;
+  background: black;
+  margin: 5px;
+  border-radius: 30%;
+  color: #4CAF50;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn i{
+  font-size: 24px;
+  transition: 0.4s linear;
+}
+
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #4CAF50;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn:hover::before{
+  animation: xD 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes xD {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
 }
 
 /* ARRIBA!! */
