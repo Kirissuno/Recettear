@@ -2,11 +2,13 @@ body{
   margin: 0;
   padding: 0;
   background-image: url(../img/bg.png);
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container{
   background-color: white;
+  opacity: 0.9;
 }
 
 /* CABECERA*/
@@ -144,6 +146,13 @@ body{
   color: white;
 }
 
+
+/* CUERPO INDICE */
+
+.video{
+  text-align: center;
+}
+
 /* CUERPO DULCES*/
 
 .dulces{
@@ -208,13 +217,67 @@ input.sortbtn{
 }
 
 input.sortbtn:hover{
-  background: #2980b9;
+  background: #4CAF50;
 }
 
-input.sortbtn::after{
-  content: "";
+.ganadoranterior{
+  height: 150px;
+  width: auto;
+  vertical-align: middle;
+  text-align: center;
+  background-color: black;
+  background-image: url('../img/snow1.png'), url('../img/snow2.png'), url('../img/snow3.png');
+  animation: nieve 20s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes nieve {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+.ganadoranterior b{
+  line-height: 50px;
+  font-size: 24px;
+  color: White;
+}
+
+.ganadoranterior p{
+  color: #4CAF50;
+  font-size: 20px;
+}
+
+.criterios .oculto {
+  width: 50%;
+  display: table;
+  height: auto;
+  overflow: visible;
+  background: black;
+  color: white;
+  transition: all 1s ease;
+}
+.no-oculto {
+  padding: 10px 10px 0 10px;
+}
+
+.no-oculto p{
+  color: #4CAF50;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.criterios input[type="checkbox"]:not(:checked) + .oculto {
+  height: 0;
+  opacity: 0;
   display: block;
-  clear: both;
 }
 
 /* PIE */

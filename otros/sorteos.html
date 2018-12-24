@@ -80,36 +80,89 @@
 				</div>
 
 					<p>Rellena el siguiente formulario con tus datos y envíanos tu receta como documento adjunto:</p>
+					<div class="criterios" align="center">
+					  <b>Criterios de selección</b>
+							<input type="checkbox" name="criterios">
+						  <div class="oculto">
+						    <div class="no-oculto">
+						      <table>
+										<tr>
+											<td> </td>
+											<td> Originalidad </td>
+											<td> Sabor </td>
+											<td> Aspecto </td>
+											<td> Coste </td>
+											<td> Dificultad </td>
+										</tr>
+										<tr>
+											<td>Calificación</td>
+											<td> 5/5 </td>
+											<td> 5/5 </td>
+											<td> 5/5 </td>
+											<td> 5/5 </td>
+											<td> 5/5 </td>
+										</tr>
+						      </table>
+									<p>La receta se evaluará según dichas notas y habrá un ranking mediante el cual podremos saber el ganador, en caso de empate se reevaluarán las recetas.</p>
+						    </div>
+						  </div>
+					</div>
+					<br>
 					<div class="formulario">
 						<form class="sorteo" action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" method="post">
-							<input class="sortexto" type="text" name="nombre" placeholder="Nombre y Apellidos" maxlength="50">
+							<input class="sortexto" type="text" name="nombre" placeholder="Nombre y Apellidos *" maxlength="50" required>
 							<b>Fecha de nacimiento</b>
 							<input class="sortexto" type="date" name="fechanacimiento" value="2000-01-01">
-							<input class="sortexto" type="text" name="ciudad" placeholder="Ciudad" maxlength="20">
-							<input class="sortexto" type="number" name="codpost" placeholder="Código Postal" min="1000" max="53000">
-							<input class="sortexto" type="text" name="direccion" placeholder="Dirección">
-							<input class="sortexto" type="email" name="correo" placeholder="Correo electrónico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+							<input class="sortexto" type="text" name="ciudad" placeholder="Ciudad *" maxlength="20" required>
+							<input class="sortexto" type="number" name="codpost" placeholder="Código Postal *" min="1000" max="53000" required>
+							<input class="sortexto" type="text" name="direccion" placeholder="Dirección *" required>
+							<input class="sortexto" type="email" name="correo" placeholder="Correo electrónico *" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 							<br>
-							<div align="center">
-								<input class="sortexto" type="file" class="sorteofile">
+							<div>
+								<b>Receta *</b>
+								<input class="sortexto" type="file" class="sorteofile" required>
 							</div>
+							<b style="color: red;">* Obligatorio</b>
 							<br>
 							<div align="right">
 								<input class="sortbtn" type="submit" name="enviar" value="Enviar">
 							</div>
 							<hr>
-							<br>
 						</form>
 						<h5>El ganador será elegido el día 31 de Enero de 2019 por nuestros mejores chefs.</h5>
 						<hr>
-					</div>
+						<h3 align="center" style="color:red">Sorteos anteriores</h3>
+						<div class="ganadoranterior">
+
+							<b>Diciembre 2018</b>
+							<p>Robert Filip, Tocina (Sevilla)</p>
+							<b>¡¡FELICIDADES!!</b>
+						</div>
+
 				</div>
 			</div>
 		</div>
 		<br>
-		
+
 		<!-- FOOTER -->
 		<div class="container" style="margin-bottom:0" id="pie" align="center">
+		<div class="middle">
+      <a class="btn" href="https://www.facebook.com/robertxfilip" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="btn" href="https://twitter.com/Clonossum" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn" href="https://plus.google.com/+Clonossum" target="_blank">
+        <i class="fab fa-google"></i>
+      </a>
+      <a class="btn" href="https://www.instagram.com/robertxfilip/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn" href="https://www.youtube.com/channel/UC6LRfk9oLqdZeldPgJlTYrg?view_as=subscriber" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
 		<p>Copyright © 2018 · Recettear by Robert Filip</p>
 		</div>
 
